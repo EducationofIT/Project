@@ -1,0 +1,596 @@
+Online-Exam-System/
+│
+├── admin/
+├── student/
+├── server/
+├── database/
+├── public/
+├── css/
+├── js/
+├── uploads/
+├── results/
+├── package.json
+├── README.md
+└── server.js
+
+You are a Senior Full Stack Developer with 15+ years of experience.
+
+Your task is to build a COMPLETE professional Online Examination System from scratch.
+
+IMPORTANT RULES
+
+• Never skip any feature.
+• Build the entire project.
+• Do not give examples.
+• Write complete production-ready code.
+• Every file must be fully coded.
+• Continue automatically until every file is completed.
+• Never leave TODO comments.
+• Never say "implement later."
+• Create a complete folder structure.
+• Generate every HTML, CSS, JS, Node.js, Express, API, SQL, configuration file.
+• The project should be ready to run after npm install and npm start.
+
+========================================
+
+TECH STACK
+
+Frontend
+HTML5
+CSS3
+JavaScript ES6
+
+Backend
+Node.js
+Express.js
+
+Database
+SQLite (preferred)
+
+Authentication
+JWT
+bcrypt
+
+Uploads
+Multer
+
+Charts
+Chart.js
+
+PDF
+jsPDF
+
+Icons
+Font Awesome
+
+========================================
+
+UI DESIGN
+
+Modern
+Professional
+Responsive
+Glassmorphism
+Dark Mode
+Blue + Purple Theme
+Smooth Animations
+Beautiful Dashboard
+Professional Admin Panel
+
+========================================
+
+LOGIN PAGE
+
+Landing page
+
+Choose
+
+○ Student
+
+○ Admin
+
+Student
+
+Ask
+
+Roll Number
+
+Name
+
+If exam available
+
+Start Exam
+
+Else
+
+"No exam available"
+
+Admin
+
+Ask Password
+
+Password
+
+admin123
+
+Use bcrypt.
+
+========================================
+
+ADMIN PANEL
+
+Dashboard
+
+Cards
+
+Total Students
+
+Total Exams
+
+Questions
+
+Results
+
+Average Score
+
+Recent Activity
+
+========================================
+
+CREATE EXAM
+
+Exam Name
+
+Subject
+
+Duration
+
+Passing Marks
+
+Total Marks
+
+Start Date
+
+End Date
+
+Instructions
+
+Publish
+
+Draft
+
+Delete
+
+Edit
+
+Duplicate
+
+========================================
+
+QUESTION TYPES
+
+1.
+
+MCQ
+
+Single Correct
+
+Two Correct
+
+Three Correct
+
+Multiple Correct
+
+Unlimited options
+
+Image support
+
+Marks
+
+Negative marking
+
+Shuffle options
+
+========================================
+
+2.
+
+Fill in the Blanks
+
+Case insensitive checking
+
+Multiple accepted answers
+
+========================================
+
+3.
+
+Short Answer
+
+Manual checking
+
+========================================
+
+4.
+
+Long Answer
+
+Manual checking
+
+Rich text
+
+========================================
+
+5.
+
+Programming Questions
+
+Code editor
+
+Syntax highlighting
+
+Language selection
+
+C
+
+C++
+
+Java
+
+Python
+
+JavaScript
+
+Execution box
+
+Input
+
+Output
+
+Test Cases
+
+Hidden Test Cases
+
+========================================
+
+EXAM PAGE
+
+Professional UI
+
+Question Navigator
+
+Sidebar
+
+Current Question
+
+Progress Bar
+
+Answered
+
+Skipped
+
+Marked for Review
+
+Question Palette
+
+One Question Mode
+
+All Question Mode
+
+Save & Next
+
+Previous
+
+Submit
+
+Confirmation Popup
+
+========================================
+
+TIMER
+
+Countdown
+
+Auto submit
+
+Warning
+
+5 minutes left
+
+1 minute left
+
+========================================
+
+AUTO SAVE
+
+Save every
+
+5 seconds
+
+========================================
+
+RESULT SYSTEM
+
+Immediately evaluate
+
+MCQ
+
+Fill blanks
+
+Show
+
+Score
+
+Percentage
+
+Correct
+
+Wrong
+
+Skipped
+
+Time Taken
+
+Rank
+
+Grade
+
+Pass Fail
+
+Download PDF
+
+Print
+
+========================================
+
+ADMIN RESULT PANEL
+
+Student List
+
+Search
+
+Sort
+
+Filter
+
+Open Answer Sheet
+
+Manual Evaluation
+
+Approve
+
+Reject
+
+Export
+
+Excel
+
+CSV
+
+PDF
+
+========================================
+
+ANTI CHEATING
+
+Force Full Screen
+
+If fullscreen exits
+
+Warning
+
+3 warnings
+
+Auto Submit
+
+Detect
+
+Tab Change
+
+Visibility Change
+
+Window Blur
+
+Resize
+
+DevTools Open
+
+Right Click
+
+Copy
+
+Paste
+
+Cut
+
+Drag
+
+Text Selection
+
+Print
+
+Save Page
+
+View Source
+
+F12
+
+Ctrl+Shift+I
+
+Ctrl+Shift+J
+
+Ctrl+Shift+C
+
+Ctrl+U
+
+Ctrl+P
+
+Ctrl+S
+
+Ctrl+A
+
+Ctrl+C
+
+Ctrl+V
+
+Ctrl+X
+
+Alt Key
+
+Esc Key
+
+Disable Context Menu
+
+Randomize
+
+Questions
+
+Options
+
+Question Order
+
+Option Order
+
+Auto logout after cheating
+
+Store cheating logs
+
+IP Address
+
+Browser
+
+OS
+
+Login Time
+
+Exam Time
+
+Violation Count
+
+========================================
+
+SECURITY
+
+Helmet
+
+Rate Limiter
+
+Input Validation
+
+SQL Injection Protection
+
+XSS Protection
+
+CSRF Protection
+
+JWT Authentication
+
+bcrypt Password
+
+Secure Cookies
+
+========================================
+
+DATABASE
+
+Students
+
+Admins
+
+Exams
+
+Questions
+
+Answers
+
+Results
+
+Logs
+
+Violations
+
+Settings
+
+========================================
+
+ADMIN FEATURES
+
+Import Questions
+
+Export Questions
+
+Duplicate Exam
+
+Bulk Upload
+
+CSV Upload
+
+Excel Upload
+
+Image Upload
+
+Backup
+
+Restore
+
+========================================
+
+STUDENT FEATURES
+
+Profile
+
+Change Password
+
+Previous Results
+
+Leaderboard
+
+Notifications
+
+========================================
+
+SETTINGS
+
+School Name
+
+Logo
+
+Theme
+
+Dark Mode
+
+Exam Rules
+
+Password Change
+
+========================================
+
+FILES
+
+Create complete project structure.
+
+Generate every file.
+
+Never leave empty files.
+
+========================================
+
+OUTPUT FORMAT
+
+Output every file one by one.
+
+Always include
+
+Filename
+
+then
+
+complete code.
+
+Continue automatically until the whole project is finished.
+
+Do not stop.
+
+Do not summarize.
+
+Keep generating until every file is complete.
