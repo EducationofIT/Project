@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Admin</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Create Exam</h2>
+
+<input id="question" placeholder="Question"><br><br>
+
+<input id="o1" placeholder="Option 1"><br>
+<input id="o2" placeholder="Option 2"><br>
+<input id="o3" placeholder="Option 3"><br>
+<input id="o4" placeholder="Option 4"><br>
+
+Correct Option Number
+
+<input id="answer" type="number">
+
+<br><br>
+
+Duration Minutes
+
+<input id="time" type="number" value="5">
+
+<br><br>
+
+<button onclick="save()">Save Exam</button>
+
+<script>
+
+function save(){
+
+const exam={
+time:document.getElementById("time").value,
+questions:[
+{
+q:question.value,
+o:[
+o1.value,
+o2.value,
+o3.value,
+o4.value
+],
+a:Number(answer.value)-1
+}
+]
+};
+
+localStorage.setItem("exam",JSON.stringify(exam));
+
+alert("Saved");
+
+}
+
+</script>
+
+</body>
+</html>
