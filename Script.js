@@ -234,13 +234,17 @@ function previousQuestion() {
 // Temporary Submit
 // ----------------------------
 
-function submitExam() {
+function submitExam(){
 
     saveCurrentAnswer();
 
-    alert("Exam Submitted!");
+    localStorage.setItem("answers", JSON.stringify(answers));
 
-    console.log(answers);
+    let result = calculateResult();
+
+    localStorage.setItem("result", JSON.stringify(result));
+
+    window.location.href = "result.html";
 
 }
 
@@ -371,3 +375,81 @@ showQuestion = function(){
 
 // Reload current question
 showQuestion();
+
+function calculateResult(){
+
+    let totalMarks = 0;
+    let obtainedMarks = 0;
+
+    let correct = 0;
+    let wrong = 0;
+    let skipped = 0;
+
+    questions.forEach((q, index)=>{
+
+        totalMarks += q.marks;
+
+        let ans = answers[index];
+
+        if(ans == null || ans === "" ||
+           (Array.isArray(ans) && ans.length === 0))
+        {
+            skipped++;
+            return;
+        }
+
+        if(q.type === "mcq"){
+
+            if(JSON.stringify(ans.sort()) === JSON.stringify(q.answer.sort())){
+
+                obtainedMarks += q.marks;
+                correct++;
+
+            }else{
+
+                wrong++;
+
+            }
+
+        }
+
+        else if(q.type === "fill"){
+
+            let value = String(ans).trim().toLowerCase();
+
+            let ok = q.answer.some(a =>
+                a.toLowerCase() === value
+            );
+
+            if(ok){
+
+                obtainedMarks += q.marks;
+                correct++;
+
+            }else{
+
+                wrong++;
+
+            }
+
+        }
+
+    });
+
+    return {
+
+        totalMarks,
+        obtainedMarks,
+        correct,
+        wrong,
+        skipped,
+
+        percentage:
+        ((obtainedMarks/totalMarks)*100).toFixed(2),
+
+        result:
+        obtainedMarks >= totalMarks*0.40 ? "PASS" : "FAIL"
+
+    };
+
+}
