@@ -1,0 +1,478 @@
+# Build a Complete Production-Ready Online Examination System
+
+You are a Senior Full Stack Developer with 15+ years of experience.
+
+Your task is to build a COMPLETE, production-ready Online Examination System.
+
+Do NOT generate examples.
+
+Do NOT generate placeholders.
+
+Do NOT skip any feature.
+
+Do NOT leave TODO comments.
+
+Generate COMPLETE WORKING CODE for every file.
+
+Every button, API, page, and feature must work.
+
+Continue automatically until the entire project is finished.
+
+---
+
+# Technology Stack
+
+Frontend
+
+* HTML5
+* CSS3
+* Vanilla JavaScript (ES6)
+
+Backend
+
+* Node.js
+* Express.js
+
+Authentication
+
+* Firebase Authentication
+
+Database
+
+* Firebase Firestore
+
+Do NOT use:
+
+* Firebase Storage
+* MySQL
+* MongoDB
+* SQLite
+* PHP
+* React
+* Vue
+* Angular
+
+---
+
+# Project Structure
+
+```text
+OnlineExamSystem/
+
+client/
+│
+├── index.html
+├── admin-login.html
+├── student-login.html
+├── dashboard.html
+├── exam.html
+├── result.html
+├── profile.html
+├── css/
+├── js/
+
+server/
+│
+├── server.js
+├── firebase.js
+├── routes/
+├── controllers/
+├── middleware/
+├── utils/
+
+config/
+│
+├── firebase-config.js
+├── firestore.rules
+
+package.json
+
+README.md
+```
+
+---
+
+# Authentication
+
+Use Firebase Authentication.
+
+Admin Login
+
+* Email
+* Password
+
+Student Login
+
+* Roll Number
+* Name
+
+Validate student using Firestore.
+
+Maintain secure login sessions.
+
+Protect admin routes.
+
+Logout functionality.
+
+---
+
+# Firestore Collections
+
+admins
+
+students
+
+exams
+
+questions
+
+submissions
+
+results
+
+settings
+
+notifications
+
+---
+
+# Admin Dashboard
+
+Dashboard Cards
+
+* Total Students
+* Total Exams
+* Published Exams
+* Submitted Exams
+* Average Score
+
+Recent Activity
+
+Search
+
+Filter
+
+---
+
+# Exam Management
+
+Create Exam
+
+Edit Exam
+
+Delete Exam
+
+Duplicate Exam
+
+Publish
+
+Draft
+
+Archive
+
+Exam Name
+
+Subject
+
+Duration
+
+Passing Marks
+
+Instructions
+
+Negative Marking
+
+Random Question Order
+
+Random Option Order
+
+---
+
+# Unlimited Questions
+
+Admin can create unlimited questions.
+
+Question Types
+
+## MCQ
+
+Single Correct
+
+Multiple Correct
+
+Unlimited Options
+
+Marks
+
+Negative Marks
+
+Explanation
+
+---
+
+## Fill in the Blank
+
+Multiple accepted answers
+
+Case insensitive checking
+
+---
+
+## Short Answer
+
+Manual evaluation
+
+---
+
+## Long Answer
+
+Manual evaluation
+
+Rich text support
+
+---
+
+## Programming Question
+
+Language Selector
+
+* Java
+* Python
+* JavaScript
+* C
+* C++
+
+Large code editor
+
+Input box
+
+Expected output
+
+Hidden test cases
+
+Visible test cases
+
+---
+
+# Student Exam
+
+Professional Interface
+
+One Question at a Time
+
+Question Number
+
+Question Palette
+
+Progress Bar
+
+Answered
+
+Skipped
+
+Marked for Review
+
+Visited
+
+Buttons
+
+Previous
+
+Save
+
+Save & Next
+
+Clear Response
+
+Mark for Review
+
+Submit
+
+Automatically restore answers after refresh.
+
+Automatically save answers to Firestore every few seconds.
+
+---
+
+# Timer
+
+Countdown Timer
+
+HH:MM:SS
+
+Show remaining time.
+
+Automatically submit when time reaches zero.
+
+Store server timestamp to prevent timer reset after refresh.
+
+---
+
+# Result System
+
+Automatically evaluate
+
+* MCQ
+* Fill in the Blank
+
+Manual evaluation
+
+* Short Answer
+* Long Answer
+* Programming
+
+Display
+
+* Total Marks
+* Obtained Marks
+* Correct
+* Wrong
+* Skipped
+* Percentage
+* Grade
+* Pass / Fail
+* Time Taken
+
+Generate printable result page.
+
+Download PDF using jsPDF.
+
+---
+
+# Admin Result Panel
+
+View all submissions.
+
+Open student answer sheet.
+
+Evaluate descriptive answers.
+
+Publish final result.
+
+Export
+
+CSV
+
+PDF
+
+---
+
+# Student Dashboard
+
+Profile
+
+Exam History
+
+Result History
+
+Notifications
+
+Change Password
+
+Download Result
+
+---
+
+# APIs
+
+Authentication
+
+Create Exam
+
+Edit Exam
+
+Delete Exam
+
+Publish Exam
+
+Get Exams
+
+Get Questions
+
+Submit Exam
+
+Save Answers
+
+Get Results
+
+Update Profile
+
+Notifications
+
+---
+
+# Firebase Firestore
+
+Use Firestore for all application data.
+
+Do not use Firebase Storage.
+
+Do not use any SQL database.
+
+Use Firestore Security Rules.
+
+Restrict admin collections to admins only.
+
+Restrict students so they can only access their own submissions and results.
+
+Validate all requests on the Express.js backend.
+
+---
+
+# UI
+
+Responsive
+
+Modern
+
+Professional
+
+Dark Mode
+
+Light Mode
+
+Glassmorphism
+
+Animated Cards
+
+Sidebar Navigation
+
+Mobile Friendly
+
+Tablet Friendly
+
+Desktop Friendly
+
+Loading Animations
+
+Toast Notifications
+
+Confirmation Dialogs
+
+---
+
+# Package
+
+Generate complete package.json.
+
+Generate README with installation steps.
+
+Generate Firebase setup instructions.
+
+Generate Firestore Security Rules.
+
+Generate all HTML.
+
+Generate all CSS.
+
+Generate all JavaScript.
+
+Generate all Node.js files.
+
+Generate all Express.js routes and controllers.
+
+Generate every file completely.
+
+Do not summarize.
+
+Do not stop until the entire project is finished.
