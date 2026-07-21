@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Exam</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<script>
+
+const exam=JSON.parse(localStorage.getItem("exam"));
+
+if(!exam){
+
+alert("No Exam Available");
+
+location.href="index.html";
+
+}
+
+const roll=prompt("Enter Roll Number");
+
+if(!roll)
+location.href="index.html";
+
+</script>
+
+<h2 id="timer"></h2>
+
+<div id="examArea"></div>
+
+<button onclick="submitExam()">Submit</button>
+
+<script src="app.js"></script>
+
+</body>
+</html>
